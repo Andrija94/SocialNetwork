@@ -1,0 +1,26 @@
+[
+    {
+        "username": "endi123",
+        "password": "no0013145",
+        "email": "endi@mail.com",
+        "userType": "USER",
+        "firstName": "Andrija",
+        "lastName": "Velickovic",
+        "birthday": "27.10.1994.",
+        "gender": "MALE",
+        "accountType": "PRIVATE",
+        "profilePicture": "smile.jpg"
+    },
+    {
+        "username": "tokitoki",
+        "password": "no0013145",
+        "email": "toki@mail.com",
+        "userType": "ADMIN",
+        "firstName": "Stojan",
+        "lastName": "Velickovic",
+        "birthday": "29.04.1997.",
+        "gender": "MALE",
+        "accountType": "PRIVATE",
+        "profilePicture": "derp.jpg"
+}
+]
