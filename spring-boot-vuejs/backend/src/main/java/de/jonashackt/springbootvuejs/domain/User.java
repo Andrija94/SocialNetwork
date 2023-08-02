@@ -1,7 +1,12 @@
 package de.jonashackt.springbootvuejs.domain;
 
+import de.jonashackt.springbootvuejs.dto.RegisterDto;
+
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static de.jonashackt.springbootvuejs.service.HashPassword.hashWith256;
 
 public class User {
     private String username;
@@ -13,10 +18,9 @@ public class User {
     private String gender;
     private String userType;
     private String profilePicture;
-    private final List<UserPost> listOfPosts = new ArrayList<>();
-    private final List<String> listOfPictures = new ArrayList<>();
-    private final List<User> friendRequests = new ArrayList<>();
-    private final List<User> listOfFriends = new ArrayList<>();
+    private final List<String> pictures = new ArrayList<>();
+    private final List<String> friendRequests = new ArrayList<>();
+    private final List<String> friends = new ArrayList<>();
     private String accountType;
 
     public User () {
@@ -32,6 +36,19 @@ public class User {
         this.userType = userType;
         this.profilePicture = profilePicture;
         this.accountType = accountType;
+    }
+
+    public User(RegisterDto registerDto) throws NoSuchAlgorithmException {
+        this.username = registerDto.getUsername();
+        this.password = hashWith256(registerDto.getPassword());
+        this.email = registerDto.getEmail();
+        this.firstName = registerDto.getFirstName();
+        this.lastName = registerDto.getLastName();
+        this.birthday = registerDto.getBirthday();
+        this.gender = registerDto.getGender();
+        this.userType = "USER";
+        this.profilePicture = "user.jpg";
+        this.accountType = "PUBLIC";
     }
 
     public String getUsername() {
@@ -96,7 +113,15 @@ public class User {
     public void setProfilePicture(String profilePicture) {
         this.profilePicture = profilePicture;
     }
-
+    public List<String> getPictures() {
+        return pictures;
+    }
+    public List<String> getFriendRequests () {
+        return friendRequests;
+    }
+    public List<String> getFriends () {
+        return friends;
+    }
     public String getaccountType() {
         return accountType;
     }

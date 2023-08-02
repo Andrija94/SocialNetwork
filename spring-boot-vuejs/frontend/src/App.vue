@@ -1,7 +1,23 @@
 <template>
-  <router-view/>
+  <div>
+    <router-view/>
+  </div>
 </template>
 
+
+<script setup lang="js">
+import {defineComponent} from "vue";
+
+export default defineComponent({
+  name: "App",
+  data: function () {
+    return {
+      showNavBar: false,
+    }
+  }
+})
+
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -14,15 +30,14 @@
 
 #nav {
   padding: 30px;
+
   a {
     font-weight: bold;
     color: #2c3e50;
+
     &.router-link-exact-active {
-     color: #42b983;
+      color: #42b983;
     }
   }
 }
 </style>
-<script setup lang="ts">
-import HelloSpringWorld from "@/components/HelloSpringWorld.vue";
-</script>

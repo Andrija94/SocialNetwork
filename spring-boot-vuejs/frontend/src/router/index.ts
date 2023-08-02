@@ -1,16 +1,19 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
 import Home from '../components/Home.vue'
 
 
 import store from '../store'
 import Login from "@/components/Login.vue";
+import Register from "@/components/Register.vue";
+import Posts from "@/components/Posts.vue";
 
 const routes: Array<RouteRecordRaw> = [
-    { path: '/', component: Login },
-    { path: '/home', component: Home },
-
+    {path: '/', component: Login},
+    {path: '/home/:username', component: Home},
+    {path: '/register', component: Register},
+    {path: '/post/:username', component: Posts},
     // otherwise redirect to home
-    { path: '/:pathMatch(.*)*', redirect: '/' }
+    {path: '/:pathMatch(.*)*', redirect: '/'}
 ]
 
 const router = createRouter({

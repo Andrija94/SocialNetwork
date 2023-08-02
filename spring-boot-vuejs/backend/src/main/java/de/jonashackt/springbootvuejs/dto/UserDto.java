@@ -1,5 +1,7 @@
 package de.jonashackt.springbootvuejs.dto;
 
+import de.jonashackt.springbootvuejs.domain.User;
+
 public class UserDto {
     private String username;
     private String firstName;
@@ -12,6 +14,16 @@ public class UserDto {
 
     public UserDto() {
 
+    }
+    public UserDto(User user) {
+        this.username = user.getUsername();
+        this.firstName = user.getFirstName();
+        this.lastName = user.getLastName();
+        this.birhtday = user.getBirthday();
+        this.profilePicture = user.getProfilePicture();
+        this.gender = user.getGender();
+        this.userType = user.getUserType();
+        this.accountType = user.getaccountType();
     }
     public UserDto(String username, String firstName, String lastName, String birhtday, String profilePicture, String gender,
     String userType, String accountType) {
