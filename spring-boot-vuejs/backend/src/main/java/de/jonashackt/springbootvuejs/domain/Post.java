@@ -11,14 +11,12 @@ public class Post {
     private String id;
     private String picture;
     private String text;
+    private final List<String> comments = new ArrayList<>();
+
 
     public List<String> getComments() {
         return comments;
     }
-
-
-
-    private final List<String> comments = new ArrayList<>();
 
 
     public Post () {

@@ -30,7 +30,7 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" ref="closeButton">Close</button>
           <button @click="createPost" type="button" class="btn btn-outline-success">Create</button>
         </div>
       </div>
@@ -95,7 +95,8 @@ export default defineComponent({
       })
           .then(response => {
             if (response.status === 400) {alert(response.data)}
-
+            // router.replace("/home/" + this.dto.username)
+            console.log(this.$refs.closeButton.modal('hide'))
       })
           .catch(error => {
             if (error.response.status === 400) {

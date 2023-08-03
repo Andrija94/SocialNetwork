@@ -9,26 +9,22 @@ public class PostDto {
     private String userID;
     private String picture;
     private String text;
-    private ArrayList<String> comments;
+    private  final ArrayList<String> comments = new ArrayList<>();
 
 
     public PostDto () {
 
     }
 
-    public PostDto (Post p) {
-        this.userID = p.getUserID();
-        this.picture = p.getPicture();
-        this.text = p.getText();
-        this.comments = (ArrayList<String>) p.getComments();
+    public PostDto (String userID, String picture, String text) {
+        this.userID = userID;
+        this.picture = picture;
+        this.text = text;
     }
 
 
     public ArrayList<String> getComments() {
         return comments;
-    }
-    public void setComments(ArrayList<String> comments) {
-        this.comments = comments;
     }
     public String getPicture() {
         return picture;

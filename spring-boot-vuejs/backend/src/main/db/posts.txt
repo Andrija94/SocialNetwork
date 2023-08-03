@@ -10,4 +10,82 @@
   "picture" : "IMG_20210308_225441_359.jpg",
   "text" : "AJLELELE",
   "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "53e33b07-af23-47d6-ae42-8f026db68c3f",
+  "picture" : "avatar.jpg",
+  "text" : "",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "2f895a5a-a54f-45e0-97be-3ec319667716",
+  "picture" : "",
+  "text" : "Something to say -.-",
+  "comments" : [ ]
+},{
+  "userID" : "toki",
+  "id" : "76689a6a-7a54-4651-9df5-b6c2e752a9f5",
+  "picture" : "",
+  "text" : "Post without picture",
+  "comments" : [ ]
+},{
+  "userID" : "toki",
+  "id" : "26a40662-3474-4189-a8c4-0de6a1eebb67",
+  "picture" : "IMG_20200809_205505_728.jpg",
+  "text" : "",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "3fbcb732-c1b8-4661-9730-84ecab227dc7",
+  "picture" : "IMG_20200719_220420_293.jpg",
+  "text" : "weird",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "243468b2-5d73-4d71-aa24-010b6c6b4502",
+  "picture" : "IMG_20200815_163759_449.jpg",
+  "text" : "",
+  "comments" : [ ]
+},{
+  "userID" : "toki",
+  "id" : "8ca1492f-4f1f-45ad-b313-ce2bb9548f5a",
+  "picture" : "",
+  "text" : "WHAAAAT",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "6bf82b44-dac0-4180-946c-aca77be79b01",
+  "picture" : "",
+  "text" : "asdasdasdasd",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "385b467a-48c6-440a-ba27-3bdd9d382886",
+  "picture" : "",
+  "text" : "dwqdwq",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "ec71b941-1e0d-476e-9797-221b8bb5ccfa",
+  "picture" : "",
+  "text" : "dwqdqw",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "a5c7889c-0421-48c4-b890-265c478bb9d1",
+  "picture" : "",
+  "text" : "dwqdqw",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "7f4a80b5-70ae-4fcd-8fba-a8e60e1cbc03",
+  "picture" : "",
+  "text" : "dwq",
+  "comments" : [ ]
+},{
+  "userID" : "endi123",
+  "id" : "60a182df-1f7a-47f4-8ec6-1d02133b1fb6",
+  "picture" : "",
+  "text" : "dwq",
+  "comments" : [ ]
 }]

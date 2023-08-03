@@ -1,4 +1,5 @@
 <template>
+
   <div class="home">
     <div>
       <Navbar :username="username"></Navbar>
